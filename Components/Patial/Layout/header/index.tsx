@@ -5,7 +5,7 @@ import {navbarLinks} from "@/core/contance/navbarLink"
 
 function Navbar(){
     return(
-        <div className="nav flex justify-between items-center py-6 px-10 bg-[#252525] text-[#FFFFFF]">
+        <div className="nav flex justify-between items-center py-6 px-12 bg-[#252525] text-[#FFFFFF]">
            <div>
                 <Image
                    src="/RentifyIcon.png"
