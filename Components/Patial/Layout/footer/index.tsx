@@ -52,17 +52,17 @@ function Footer(){
                  }
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-x-6 gap-y-4">
+            <div className="grid grid-cols-4  ">
           {
             footerList.map((item,index)=>(
                 <div>
-                    <p key={index} className="text-lg font-[700] text-[#0A58CA] pb-4">{item.title}</p>
+                    <p key={index} className="text-lg font-[700] text-[#0A58CA] pb-6">{item.title}</p>
                    {
                       item.subset.map((item,index)=>(
-                        typeof item.subset=='Array<string>' ? (
+                        typeof item=='string' ? (
                             <p key={index} className="text-[#73767C] text-sm py-1.5">{item}</p>
-                        ) : typeof item.subset=='Array<subsetType>' ? (
-                               <div key={index} >
+                        ) : typeof item!='string' ? (
+                               <div key={index} className="flex gap-2">
                                    <Icon icon={item.icon}/>
                                    <p className="text-[#73767C] text-sm py-1.5">{item.text}</p>
                                 </div>
