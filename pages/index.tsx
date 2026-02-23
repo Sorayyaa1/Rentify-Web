@@ -1,10 +1,11 @@
-import Image from "next/image";
 import IntroSection from "@/Components/IntroSection";
+import MostViewedLastWeek from "@/Components/mostViewedLastWeek"
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col gap-20">
        <IntroSection />
+       <MostViewedLastWeek />
        
     </div>
   )
