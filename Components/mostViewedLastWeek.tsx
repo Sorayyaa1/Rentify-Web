@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Icon } from "@/pages/Components/UI/Icon/Icon"
+import { Icon } from "@/Components/UI/Icon/Icon"
 import {MostViewedPropertiesList} from "@/core/contance/MostViewedPropertiesList"
 
 function MostViewedLastWeek(){
