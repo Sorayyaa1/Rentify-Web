@@ -1,32 +1,7 @@
-import { Icon } from "@/pages/Components/UI/Icon/Icon"
-import {footerSocialMediaIcons} from "@/core/contance/footerIcons"
-import {siteCredibilityBadges} from "@/core/contance/footerIcons"
+import { Icon } from "@/Components/UI/Icon/Icon"
+import {footerSocialMediaIcons,siteCredibilityBadges,footerList} from "@/core/contance/footerIcons"
 
 
-interface footerListType{
-    title:string
-    subset:Array<string | subsetType>
-}
-
-interface subsetType{
-    text:string
-    icon:string
-}
-
-const footerList:footerListType[]=[
-    {title:"محصول",
-     subset:["ویژگی ها","قیمت گذاری","مطالعات موردی","بررسی کردن","قیمت گذاری"]
-    },
-    {title:"شرکت",
-     subset:["ارتباط با ما","وبلاگ","فرهنگ","درباره","وبلاگ"]
-    },
-     {title:"پشتیبانی",
-     subset:["شروع کردن","مرکز کمک","تنظیمات سرور","کزارش اشکال","پشتیبانی چت"]
-    },
-     {title:"ارتباط با ما",
-     subset:[{text:"rentify@gmail.com",icon:"EmailIcon"},{text:"۰۲۱-۴۳۵۳۶۳",icon:"phoneIcon"},{text:"تهران - زعفرانیه - پلاک ۲۱۳",icon:"locationIcon"}]
-    }
-]
 
 function Footer(){
     return(

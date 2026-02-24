@@ -1,31 +1,5 @@
-import { Icon } from "@/pages/Components/UI/Icon/Icon";
-// import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@heroui/react";
-
-
-interface selectListType{
-    name:string
-    id:string
-    option:Array<optionType>
-}
-interface optionType{
-    title:string
-    value:string
-}
-
-const selectList:selectListType[]=[
-    {   name:"موقعیت مکانی",
-        id:"Location",
-        option:[{title:"تهران- نیاوران",value:"tehran-niavaran"}]
-    },
-    {   name:'نوع ملک',
-        id:"propertyType",
-        option:[{title:"آپارتمان",value:"apartment"},{title:"ویلا",value:"villa"},{title:"خانه ویلایی",value:"villaHouse"}]
-    },
-    {   name:"نوع قرارداد",
-        id:"contract",
-        option:[{title:"رهن",value:"mortgage"},{title:"اجاره",value:"rent"}]
-    }
-]
+import { Icon } from "@/Components/UI/Icon/Icon";
+import {selectList} from "@/core/contance/searchComponetArray"
 
 function SearchComponent(){
    
@@ -39,7 +13,7 @@ function SearchComponent(){
                     <Icon icon={"arrowDown"}/>
                 </div> */}
                 
-                <select id={item.id} key={index} className="text-[#73767C]">
+                <select id={item.id} key={index} title="select" className="text-[#73767C]">
                     {
                         item.option.map((item,index)=>(
                             <option key={index} value={item.value} className="text-black">{item.title}</option>
@@ -49,29 +23,6 @@ function SearchComponent(){
             </div>
            ))
            }
-           {/* {
-            <Dropdown>
-                {
-                    selectList.map((item,index)=>(
-                       <div>
-                            <DropdownTrigger>
-                               <Button variant="bordered" value={item.id}>{item.name}</Button>
-                            </DropdownTrigger>
-                            <DropdownMenu>
-                                {
-                                    item.option.map((item,index)=>(
-                                        <DropdownItem key={index} value={item.value}>
-                                           {item.title}
-                                       </DropdownItem>
-                                    ))
-                                }
-                              
-                           </DropdownMenu>
-                       </div>
-                    ))
-                }
-            </Dropdown>
-           } */}
            <button className="flex gap-2 py-8 px-6 bg-[#0D6EFD] text-[#FFFFFF] rounded-e-full cursor-pointer">
             <Icon icon={'magnifyingGlass'} />
             <p>جستجو</p>

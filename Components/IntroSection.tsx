@@ -1,7 +1,7 @@
 import SearchComponent from "@/Components/SearchComponent"
 import Image from "next/image"
 import BgIntroSection from "@/public/Images/BgIntroSection.jpg"
-import { Icon } from "@/pages/Components/UI/Icon/Icon"
+import { Icon } from "@/Components/UI/Icon/Icon"
 
 interface propertyType{
     image:string
