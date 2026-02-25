@@ -1,12 +1,13 @@
 import IntroSection from "@/Components/IntroSection";
 import MostViewedLastWeek from "@/Components/mostViewedLastWeek"
+import RentifyServices from "@/Components/RentifyServices";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-20 bg-gray-100">
-       <IntroSection />
-       <MostViewedLastWeek />
-       
+      <IntroSection />
+      <MostViewedLastWeek />
+      <RentifyServices/>
     </div>
   )
 }

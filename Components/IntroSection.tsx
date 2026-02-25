@@ -54,7 +54,7 @@ function IntroSection(){
                                <p className="text-[#989BA0]">{item.count} ملک</p>
                             </div>
                             <div className="bg-[#0D6EFD] rounded-full w-[3rem] flex flex-col justify-center items-center">
-                               <Icon  icon={"arrowLeft"}/>
+                               <Icon  icon={"arrowLeft"} className="fill-white"/>
                             </div>
                         </div>
                       </div>

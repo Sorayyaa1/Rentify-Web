@@ -4,24 +4,24 @@ import {MostViewedPropertiesList} from "@/core/contance/MostViewedPropertiesList
 
 function MostViewedLastWeek(){
     return(
-        <div className="w-11/12 mx-auto h-[48rem]">
+        <div className="w-11/12 mx-auto">
             <div className="flex justify-between py-8">
-                <p className="font-[700] text-xl">پر بازدید ترین‌های هفته‌ی گذشته</p>
-                <Link href="" className="flex gap-2 items-center text-[#0D6EFD]">مشاهده همه
-                    <Icon icon={"arrowLeft"} class="bg-black w-1/12"/>
+                <p className="font-[700] text-xl ">پر بازدید ترین‌های هفته‌ی گذشته</p>
+                <Link href="" className="flex justify-end gap-1 w-2/12 items-center text-[#0D6EFD] text-sm">مشاهده همه
+                    <Icon icon={"arrowLeft"} class="fill-[#0D6EFD] w-2/12"/>
                 </Link>
             </div>
-            <div className="grid grid-cols-4 gap-x-4 gap-y-43">
+            <div className="grid grid-cols-4 gap-4">
             {
               MostViewedPropertiesList.map((item,index)=>(
-                <div key={index} className="flex flex-col gap-3 h-40 rounded-lg">
-                    <div className="relative">
-                        <img src={item.image} alt={item.title} className="absolute h-[14rem] w-full rounded-t-xl"/>
-                        <div className="bg-[#FFFFFF] p-2 flex flex-col justify-center items-center rounded-full absolute top-[1rem] right-[1rem]">
-                            <Icon icon={item.LikeIcon} className="w-[0.75rem] h-[0.65rem]" />
+                <div key={index} className="flex flex-col rounded-lg relative">
+                    <div>
+                        <img src={item.image} alt={item.title} className=" h-56 w-full rounded-t-xl"/>
+                        <div className="bg-[#FFFFFF] p-2 flex flex-col justify-center items-center rounded-full absolute top-4 right-4">
+                            <Icon icon={item.LikeIcon} className="w-3 h-[0.65rem]" />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-3 px-2 py-4 bg-[#FFFFFF] rounded-b-lg relative top-full">
+                    <div className="flex flex-col gap-3 px-2 py-4 bg-[#FFFFFF] rounded-b-lg">
                         <div className="flex gap-4">
                             {
                                item.title==="آپارتمان" ? (<p className="bg-[#00966D] text-[#FFFFFF] w-fit py-1 px-2 rounded-xl">{item.title}</p>) :
@@ -29,7 +29,7 @@ function MostViewedLastWeek(){
                                (<p className="bg-[#084298] text-[#FFFFFF] w-fit py-1 px-2 rounded-xl">{item.title}</p>)
                             }
                             <div className="flex items-center gap-1 text-xs ">
-                                <Icon  icon={"locationIcon"} className="w-[1rem]"/>
+                                <Icon  icon={"locationIcon"} className="w-4"/>
                                 <p className="text-[#595C61]">{item.location}</p>
                             </div>
                         </div>

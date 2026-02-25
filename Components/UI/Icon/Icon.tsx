@@ -59,8 +59,8 @@ export function Icon(props:any){
 </svg>
         case "arrowLeft":
             return <svg {...props} width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5.20703H11V3.20703H1.5V5.20703Z" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.41426 4.20711L5.20715 1.41421L3.79294 0L0.29294 3.5C-0.0975842 3.89052 -0.0975842 4.52369 0.29294 4.91421L3.79294 8.41421L5.20715 7L2.41426 4.20711Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5.20703H11V3.20703H1.5V5.20703Z" fill="curentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.41426 4.20711L5.20715 1.41421L3.79294 0L0.29294 3.5C-0.0975842 3.89052 -0.0975842 4.52369 0.29294 4.91421L3.79294 8.41421L5.20715 7L2.41426 4.20711Z" fill="curentColor"/>
 </svg>
         case "unLikeIcon" :
             return <svg {...props} width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
