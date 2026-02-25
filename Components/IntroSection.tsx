@@ -2,32 +2,13 @@ import SearchComponent from "@/Components/SearchComponent"
 import Image from "next/image"
 import BgIntroSection from "@/public/Images/BgIntroSection.jpg"
 import { Icon } from "@/Components/UI/Icon/Icon"
+import {properties} from "@/core/contance/introSectionArray"
 
-interface propertyType{
-    image:string
-    title:string
-    count:string
-}
-
-const properties:propertyType[]=[
-    {image:"/Images/IntroSection/Villa.jpg",
-     title:"ویلا",
-     count:"+۹۲",
-    },
-     {image:"/Images/IntroSection/Apartement.jpg",
-     title:"آپارتمان",
-     count:"+۹۲",
-    },
-    {image:"/Images/IntroSection/villaHouse.jpg",
-     title:"خانه ویلایی",
-     count:"+۹۲",
-     }
-    ]
 function IntroSection(){
     return(
         <div className="relative">
             <div className="w-full h-2/5 flex flex-col gap-4 justify-center items-center relative">
-                <div className="h-[40rem] w-full bg-black z-20 opacity-83 rounded-b-2xl"></div>
+                <div className="h-160 w-full bg-black z-20 opacity-83 rounded-b-2xl"></div>
                 <Image
                  src={BgIntroSection}
                  alt="BgIntroSection"
@@ -41,10 +22,10 @@ function IntroSection(){
                     borderRadius:'24px'
                  }}
                 />
-                <p className="font-[700] text-2xl text-[#FFFFFF] absolute z-22 top-36">در<span className="text-[#0D6EFD] px-1">رنتی‌فای</span>دنبال چه ملکی هستید؟</p>
+                <p className="font-bold text-2xl text-[#FFFFFF] absolute z-22 top-36">در<span className="text-[#0D6EFD] px-1">رنتی‌فای</span>دنبال چه ملکی هستید؟</p>
                 <SearchComponent />
             </div>
-            <div className="w-11/12 mx-auto grid grid-cols-3 gap-6 absolute z-40 top-6/12 right-[3.3rem] ">
+            <div className="w-11/12 mx-auto grid grid-cols-3 gap-10 absolute z-40 top-6/12 right-[2.7rem] ">
                 {
                    properties.map((item,index)=>(
                       <div key={index} className="flex flex-col gap-3 rounded-lg h-96 w-96 relative">

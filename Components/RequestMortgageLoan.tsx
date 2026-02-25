@@ -1,7 +1,7 @@
 
 function RequestMortgageLoan(){
     return(
-        <div className="w-10/12 mx-auto flex justify-between rounded-xl bg-[#353739] px-2">
+        <div className="w-11/12 mx-auto flex justify-between rounded-xl bg-[#353739] px-2">
             <div className="flex flex-col items-center gap-4">
                 <div className="flex flex-col gap-2 p-10">
                     <p className="text-3xl text-[#FFFFFF] font-bold">برای دریافت وام رهن خانه کلیک کنید</p>
