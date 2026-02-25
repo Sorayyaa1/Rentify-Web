@@ -11,7 +11,7 @@ export default function Home() {
       <MostViewedLastWeek />
       <RentifyServices/>
       <RentifyServicesMap />
-      
+      <RequestMortgageLoan />
     </div>
   )
 }
