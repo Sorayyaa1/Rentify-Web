@@ -1,6 +1,7 @@
 import IntroSection from "@/Components/IntroSection";
 import MostViewedLastWeek from "@/Components/mostViewedLastWeek"
 import RentifyServices from "@/Components/RentifyServices";
+import RentifyServicesMap from "@/Components/RentifyServicesMap"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <IntroSection />
       <MostViewedLastWeek />
       <RentifyServices/>
+      <RentifyServicesMap />
     </div>
   )
 }
